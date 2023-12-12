@@ -94,6 +94,7 @@ button{
   background-color: #ff0000;
   cursor: pointer;
 }
+
 .nombre-cantidad-destinatario-container{
   display: flex ;
   flex-direction: column;

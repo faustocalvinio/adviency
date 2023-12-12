@@ -10,6 +10,7 @@ interface Regalo {
 }
 
 const regalosIniciales:Regalo[] = [
+
   { 
     id: crypto.randomUUID(),
     nombre: "PC", 
@@ -31,6 +32,11 @@ const regalosIniciales:Regalo[] = [
     imagen:'https://americansgameocio.com/4735-large_default/nintendo-ds.jpg', 
     destinatario:'John Doe'
   },
+
+  { id: crypto.randomUUID(), nombre: "PC", cantidad:1, imagen:'https://i.dell.com/sites/csimages/Product_Imagery/all/prod-2585-notebook-alienware-m18-ff-800x550.png' },
+  { id: crypto.randomUUID(), nombre: "PS5", cantidad:1, imagen:'https://cdn.idealo.com/folder/Product/200584/7/200584783/s11_produktbild_gross_1/sony-playstation-5-ps5-standard-edition.jpg'  },
+  { id: crypto.randomUUID(), nombre: "Nintendo DS", cantidad:1, imagen:'https://americansgameocio.com/4735-large_default/nintendo-ds.jpg'},
+
 ]
 
 export default function App() {  
@@ -40,7 +46,8 @@ export default function App() {
   const [amountInput, setAmountInput] = useState<number>(1);
   const [urlInput, setUrlInput] = useState<string>();
   const [displayForm, setDisplayForm] = useState<boolean>(false)
-  const [destinatarioInput, setDestinatarioInput] = useState<string>("")
+
+  const [destinatarioInput, setDestinatarioInput] = useState<string>("");
 
   function updateLocalStorage() {
     localStorage.setItem("regalos", JSON.stringify(regalos));
@@ -50,7 +57,10 @@ export default function App() {
     setAmountInput(1);
     setRegaloInput("");
     setUrlInput("");
+
     setDestinatarioInput("");
+
+
     setDisplayForm(false);
   }
 
@@ -70,6 +80,7 @@ export default function App() {
       imagen:urlInput,
       destinatario: 'Mbappe' 
     }]);
+    setRegalos(previos => [...previos , { id:crypto.randomUUID(), nombre:regaloInput, cantidad:amountInput, imagen:urlInput }]);
     vaciarInputs();
   }
 
@@ -112,6 +123,7 @@ export default function App() {
       {
         regalos.map((regalo) => (
           <li key={regalo.id} className="regalo-container">
+
             <div className="data-regalo-container">
               <span>🎁 </span>
               <img className="image-thumbnail" src={regalo.imagen ? regalo.imagen : 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1702233464/adviency-goncy/default_image.512x512_hd7edh.png'} alt={`Imagen ${regalo.nombre}`}/>
@@ -119,7 +131,9 @@ export default function App() {
                   <span>{regalo.nombre} x {regalo.cantidad}</span>
                   <pre>{regalo.destinatario}</pre>
                 </div>
-            </div>           
+            </div>          
+
+            <div className="data-regalo-container"><span>🎁 </span><img className="image-thumbnail" src={regalo.imagen ? regalo.imagen : 'https://res.cloudinary.com/dc6mrv5cb/image/upload/v1702233464/adviency-goncy/default_image.512x512_hd7edh.png'} alt={`Imagen ${regalo.nombre}`}/><span>{regalo.nombre} x {regalo.cantidad}</span></div>           
             <button onClick={()=>removeGiftById(regalo.id)} >Borrar</button>
           </li>          
         ))
