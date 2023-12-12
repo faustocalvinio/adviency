@@ -1,4 +1,8 @@
-# Adviency
+# Día 12
+
+La gente no recuerda que regalo corresponde a cada quien, agreguemos un campo para destinatario y mostremoslo.
+
+## Adviency
 
 🔔 Recordá que la idea es empezar la app de 0 cada día, no editar la del día anterior, si no te dan los tiempos o te parece mucho, editá la anterior, mejor poco que nada! 🔔
 
