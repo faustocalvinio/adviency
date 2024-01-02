@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 
-export const NieveEffect = ({ canvasRef }) => {
-   const flakes = [];
+export const NieveEffect = ({ canvasRef }:any) => {
+   const flakes:any = [];
    let mX = -100;
    let mY = -100;
 
-   const reset = (flake) => {
+   const reset = (flake:any) => {
       flake.x = Math.floor(Math.random() * window.innerWidth);
       flake.y = 0;
       flake.size = Math.random() * 3 + 2;
@@ -29,8 +29,8 @@ export const NieveEffect = ({ canvasRef }) => {
          const y2 = flake.y;
 
          const dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y));
-         const dx = x2 - x;
-         const dy = y2 - y;
+         // const dx = x2 - x;
+         // const dy = y2 - y;
 
          if (dist < minDist) {
             const force = minDist / (dist * dist);
@@ -97,7 +97,7 @@ export const NieveEffect = ({ canvasRef }) => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
 
-      const handleMouseMove = (e) => {
+      const handleMouseMove = (e:any) => {
          mX = e.clientX;
          mY = e.clientY;
       };
