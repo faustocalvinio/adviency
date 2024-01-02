@@ -1,0 +1,89 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+  
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+.App {
+    font-family: sans-serif;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    width: 390px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url('https://res.cloudinary.com/dc6mrv5cb/image/upload/v1701716632/adviency-goncy/bg-navidad_curedg.jpg');
+    background-repeat: none;
+    background-size: cover;
+}
+h1{
+    font-family: 'Ephesis'   ;
+    font-size: 55px;
+}
+#root{
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin-top: 16px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+}
+li{
+    font-size: 20px;
+    font-style: oblique;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+li::marker{
+    content: '🎁';
+}
+form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+    margin: 20px 0;
+}
+input{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+button{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #ff0000;
+    cursor: pointer;
+}

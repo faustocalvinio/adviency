@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+.App {
+  font-family: sans-serif;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+body{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url('https://res.cloudinary.com/dc6mrv5cb/image/upload/v1701716632/adviency-goncy/bg-navidad_curedg.jpg');
+  background-repeat: none;
+  background-size: cover;
+}
+h1{
+  font-family: 'Ephesis';
+  font-size: 55px;
+}
+#root{
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul{
+  margin-top: 16px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  width: 60%;  
+}
+li{
+  font-size: 20px;
+  font-style: oblique;
+  list-style: none;
+  width: 100%;
+  margin: 10px 0;  
+}
+.regalo-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 16%;
+  gap: 10px;
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 40px 40px;
+  border-radius: 20px;
+}
+label{
+  font-size: 28px;
+  font-weight: 700;
+}
+input{
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+button{
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #ff0000;
+  cursor: pointer;
+}
+.nombre-cantidad-destinatario-container{
+  display: flex ;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+pre{
+  color: rgb(110, 110, 110);
+}
+.agregar-btn{
+  background-color: green;
+}
+#agregar-regalo-btn{
+  width: 100%;
+  background-color: green;  
+}
+.display-none{
+  display: none;
+}
+.display-form{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #ff000044;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.data-regalo-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.image-thumbnail{
+  width: 50px;
+}
+.buttons-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.buttons-container button{
+  width: 100%;
+}
+.no-gifts{
+  margin: 20px auto;
+  font-family: 'Ephesis';
+  font-size: 50px;
+  text-align: center;  
+}

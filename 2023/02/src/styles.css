@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+.App {
+    font-family: sans-serif;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url('https://res.cloudinary.com/dc6mrv5cb/image/upload/v1701716632/adviency-goncy/bg-navidad_curedg.jpg');
+}
+h1{
+    font-family: 'Ephesis'   ;
+    font-size: 55px;
+}
+#root{
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+ul{
+    margin-top: 16px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    width: 60%;
+}
+li{
+    font-size: 20px;
+    font-style: oblique;
+}
+li::marker{
+    content: '🎁';
+}

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  
+}
+.App {
+  font-family: sans-serif;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.app-title{
+  width: 100%;
+  text-align: center;
+}
+body{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url('https://res.cloudinary.com/dc6mrv5cb/image/upload/v1701716632/adviency-goncy/bg-navidad_curedg.jpg');
+  background-repeat: none;
+  background-size: cover;
+}
+h1{
+  font-family: 'Ephesis';
+  font-size: 55px;
+}
+#root{
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul{
+  margin-top: 16px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  width: 60%;  
+}
+li{
+  font-size: 20px;
+  font-style: oblique;
+  list-style: none;
+  width: 100%;
+  margin: 10px 0;  
+}
+.btn-regalo-sorpresa{
+  background-color: chocolate;
+}
+.regalo-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+form{ 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 16%;
+  gap: 10px;
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 40px 40px;
+  border-radius: 20px;
+}
+label{
+  text-align: start;
+  font-size: 18px;
+}
+input{
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+button{
+  padding: 10px 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  background-color: #ff0000;
+  cursor: pointer;
+  height: fit-content;
+}
+.nombre-cantidad-destinatario-container{
+  display: flex ;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+pre{
+  color: rgb(110, 110, 110);
+}
+.agregar-btn{
+  background-color: green;
+}
+#agregar-regalo-btn{
+  width: 100%;
+  background-color: green;  
+}
+.display-none{
+  display: none;
+}
+.display-form{
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #ff000044;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.data-regalo-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.image-thumbnail{
+  width: 50px;
+}
+.precio-total{
+  font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: end;
+  display: block;
+  font-weight: 400;
+  margin: 10px 0;
+  width: 100%;
+}
+.precio-total span{
+  font-weight: 600;
+}
+.buttons-container{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.buttons-container button{
+  width: 100%;
+}
+.no-gifts{
+  margin: 20px auto;
+  font-family: 'Ephesis';
+  font-size: 50px;
+  text-align: center;  
+}
+.edit-btn{
+  background-color: cadetblue;
+}
+.preview-btn{
+  margin: 10px auto;
+  background-color: blue;
+}
+.preview-gift-modal{
+  background-color: #ffeaa3;
+  padding: 20px;
+  border-radius: 20px;
+  top: 20%;
+  left: 34%;
+  position: absolute;
+  width: 600px;
+  
+}
+.preview-gift-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0;
+}
+.preview-gift-container img{
+  width: 200px;
+  height: fit-content;
+}
+.preview-gift-container h4{
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.print-btn{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width:70px;
+  background-color: green;
+  border: 2px solid #fff;
+}
